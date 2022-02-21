@@ -1,0 +1,19 @@
+{
+	"root": true,
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"plugins": [
+		"mocha"
+	],
+	"extends": [
+		"eslint:recommended"
+	],
+	"rules": {
+		"mocha/no-exclusive-tests": "error",
+		"no-console": "error",
+		"no-unused-vars": ["error", {"vars": "all", "args": "all", "ignoreRestSiblings": false, "argsIgnorePattern": "^_"}],
+		"semi": ["error", "always"]
+	}
+}
